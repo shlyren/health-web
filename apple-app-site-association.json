@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "4QMQ63Q2X8.com.fline.health", 
+                "paths": [ "/openapp/*"]
+            }
+        ]
+    }
+}
