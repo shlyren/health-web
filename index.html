@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>杭州常青树生物科技有限公司</title>
 	<!-- css -->
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
 	<link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
 	<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="assets/css/fancybox/jquery.fancybox.css" rel="stylesheet">
@@ -19,6 +19,18 @@
 			display: -webkit-box;
 			-webkit-line-clamp: 3;
 			-webkit-box-orient: vertical;
+		}
+		.card-content a {
+			color: red;
+		}
+
+		.card-title {
+			display: flex;
+			justify-content: space-between;
+			font-size: 20px;
+		}
+		.card-title>span:last-child {
+			color: red;
 		}
 
 		@media screen and (max-width: 768px){
@@ -121,105 +133,128 @@
 						<br/>
 					</div>
 				</div>
+				<div id="products-content"></div>
 	
-				<div class="row service-v1 margin-bottom-40">
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								 <img class="img-responsive" src="assets/images/生鲜鸡.jpg" alt="">
-								<span class="card-title">田舅爷-土鸡</span>
-							</div>
-							<div class="card-content">
-								<p>
-									以生物活化养殖技术，原生态散养180天，纯粹跑出来的鸡肉！肉质劲道，皮脂少脂，汤味香浓。集生物活菌与鸡汤的精华，滋补汤中上品。
-								</p>
-							</div>
-						</div>
-					</div>
+<!--				<div class="row service-v1 margin-bottom-40">-->
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								<img class="img-responsive" src="assets/images/生鲜鸡.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>田舅爷-土鸡</span>-->
+<!--									<span>358元/只</span>-->
+<!--								</span>-->
 
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								 <img class="img-responsive" src="assets/images/鸡汤.jpg" alt="">
-								<span class="card-title">田舅爷-土鸡暖汤</span>
-							</div>
-							<div class="card-content">
-								<p>
-									精选肉质紧实土鸡，精心调配，用心烹制，味道鲜美。随时随地一拉即热。真空罐装封口，高温微波杀菌，零添加剂，放心方便。
-								</p>
-							</div>
-						</div>
-					</div>
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									以生物活化养殖技术，原生态散养180天，纯粹跑出来的鸡肉！肉质劲道，皮脂少脂，汤味香浓。集生物活菌与鸡汤的精华，滋补汤中上品。<a href="product_detail.html?id=1">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
 
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								 <img class="img-responsive" src="assets/images/家庭装鸡汤.jpg" alt="">
-								<span class="card-title">田舅爷-土鸡暖汤家庭装</span>
-							</div>
-							<div class="card-content">
-								<p>
-									田舅舅爷土鸡暖汤家庭装，在原有的鸡汤基础上升级，精心调配，用心烹制，味道鲜美。更大分量，更多满足。全家人都能享受到健康美味的土鸡汤。
-								</p>
-							</div>
-						</div>
-					</div>
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								 <img class="img-responsive" src="assets/images/鸡汤.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>田舅爷-土鸡暖汤</span>-->
+<!--									<span>39.8元/罐</span>-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									精选肉质紧实土鸡，精心调配，用心烹制，味道鲜美。随时随地一拉即热。真空罐装封口，高温微波杀菌，零添加剂，放心方便。<a href="product_detail.html?id=2">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								 <img class="img-responsive" src="assets/images/家庭装鸡汤.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>田舅爷-土鸡暖汤家庭装</span>-->
+<!--									<span>238.8元/箱</span>-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									田舅舅爷土鸡暖汤家庭装，在原有的鸡汤基础上升级，精心调配，用心烹制，味道鲜美。更大分量，更多满足。全家人都能享受到健康美味的土鸡汤。<a href="product_detail.html?id=3">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
 
 
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								<img class="img-responsive" src="assets/images/鸡粥.jpg" alt="">
-								<span class="card-title">田舅爷-土鸡暖粥</span>
-							</div>
-							<div class="card-content">
-								<p>
-									方便即食不负好时光！集健康、营养、便捷于一身。免煮即食好便利，随身携带充饥饱腹，不用下厨省时省力，随时补充能量。
-								</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								<img class="img-responsive" src="assets/images/生鲜鸭.jpg" alt="">
-								<span class="card-title">田舅爷-土鸭</span>
-							</div>
-							<div class="card-content">
-								<p>
-									从源头确保肉质营养，体内富含生物活菌，高品质营养，肉质鲜嫩，原生态多重滋补。采用先封罐，后高温杀菌，无防腐剂。性价比高。
-								</p>
-							</div>
-						</div>
-					</div>
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								<img class="img-responsive" src="assets/images/鸡粥.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>田舅爷-土鸡暖粥</span>-->
+<!--									<span>39.8元/罐</span>-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									方便即食不负好时光！集健康、营养、便捷于一身。免煮即食好便利，随身携带充饥饱腹，不用下厨省时省力，随时补充能量。<a href="product_detail.html?id=4">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								<img class="img-responsive" src="assets/images/生鲜鸭.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>田舅爷-土鸭</span>-->
+<!--									<span>358元/只</span>-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									从源头确保肉质营养，体内富含生物活菌，高品质营养，肉质鲜嫩，原生态多重滋补。采用先封罐，后高温杀菌，无防腐剂。性价比高。<a href="product_detail.html?id=5">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
 
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								<img class="img-responsive" src="assets/images/鸭汤.jpg" alt="">
-								<span class="card-title">田舅爷-老鸭暖汤</span>
-							</div>
-							<div class="card-content">
-								<p>
-									选肉质紧实土鸭，秘制调配，以经典食疗配方烹制而成。集健康、营养、便捷于一身。无明火，不伤食材，充分保留天然生态鸭肉鲜味和品质。
-								</p>
-							</div>
-						</div>
-					</div>
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								<img class="img-responsive" src="assets/images/鸭汤.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>田舅爷-老鸭暖汤</span>-->
+<!--									<span>31元/罐</span>-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									选肉质紧实土鸭，秘制调配，以经典食疗配方烹制而成。集健康、营养、便捷于一身。无明火，不伤食材，充分保留天然生态鸭肉鲜味和品质。<a href="product_detail.html?id=6">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
 
-					<div class="col-md-4 md-margin-bottom-40">
-						<div class="card small">
-							<div class="card-image">
-								<img class="img-responsive" src="assets/images/家庭装（鸭汤）.jpg" alt="">
-								<span class="card-title">老鸦暖汤家庭装</span>
-							</div>
-							<div class="card-content">
-								<p>
-									老鸦暖汤家庭装，在原有老鸦汤的基础上升级，更大分量，更多满足。全家人都能享受到健康美味的老鸭汤。
-								</p>
-							</div>
-						</div>
-					</div>
+<!--					<div class="col-md-4 md-margin-bottom-40">-->
+<!--						<div class="card small">-->
+<!--							<div class="card-image">-->
+<!--								<img class="img-responsive" src="assets/images/家庭装（鸭汤）.jpg" alt="">-->
+<!--								<span class="card-title">-->
+<!--									<span>老鸦暖汤家庭装</span>-->
+<!--									<span>69元/袋</span>-->
+<!--								</span>-->
+<!--							</div>-->
+<!--							<div class="card-content">-->
+<!--								<p>-->
+<!--									老鸦暖汤家庭装，在原有老鸦汤的基础上升级，更大分量，更多满足。全家人都能享受到健康美味的老鸭汤。<a href="product_detail.html?id=7">详情</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
 				</div>
 			</div>
 		</div>
@@ -417,5 +452,38 @@
 	<script src="assets/js/jquery.magnific-popup.min.js"></script>
 	<script src="assets/js/animate.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script>
+		
+		window.onload = function () {
+			$.getJSON("./pruducts.json",function (res) {
+				// console.log(res)
+				var html = '';
+
+				for (var key in res) {
+					const item = res[key];
+					html += '<div class="col-md-4 md-margin-bottom-40">' +
+								'<div class="card small">' +
+									'<div class="card-image">' +
+										'<img class="img-responsive" src="'+ item.icon +'" alt="">' +
+										'<span class="card-title">' +
+											'<span>'+ item.title +'</span>' +
+											'<span>'+ item.price +'</span>' +
+										'</span>' +
+									'</div>' +
+									'<div class="card-content">' +
+										'<p>'+
+											item.detail +
+											'<a href="product_detail.html?id='+item.id+'">详情</a>' +
+										'</p>' +
+									'</div>' +
+								'</div>' +
+							'</div>';
+					// console.log(item);
+
+				}
+				$('#products-content').append(html)
+			});
+		}
+	</script>
 </body>
 </html>
